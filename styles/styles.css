@@ -1,0 +1,36 @@
+header {
+    position: sticky;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header a {
+    position: relative;
+
+    color: black;
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 4px 16px;
+    text-decoration: none;
+
+
+    transition: text-decoration 1s ease-in-out; 
+}
+
+
+header a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease-in-out;
+}
+  
+header a:hover::after {
+    width: 100%;
+}

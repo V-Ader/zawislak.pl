@@ -1,12 +1,14 @@
-header {
+nav {
     position: sticky;
 
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    
+    z-index: 1;
 }
 
-header a {
+nav a {
     position: relative;
 
     color: black;
@@ -20,7 +22,7 @@ header a {
 }
 
 
-header a::after {
+nav a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -31,6 +33,6 @@ header a::after {
     transition: width 0.3s ease-in-out;
 }
   
-header a:hover::after {
+nav a:hover::after {
     width: 100%;
 }

@@ -1,0 +1,5 @@
+<div class="titleContainer">
+    <span *ngFor="let char of label | IterablePipe; let i = index" [style.backgroundImage]="'url(assets/fancy-title-meterials/' + imageIndexes[(i % 9)] + '.jpg)'">
+        {{char}}
+    </span>
+</div>

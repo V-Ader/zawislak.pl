@@ -11,13 +11,11 @@ nav {
 nav a {
     position: relative;
 
-    color: black;
-    font-size: 2vw;
+    color: rgb(#444444);
+    font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
     margin: 4px 16px;
     text-decoration: none;
-
-
     transition: text-decoration 1s ease-in-out; 
 }
 
@@ -29,10 +27,14 @@ nav a::after {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #000000;
+    background-color: #444444;
     transition: width 0.3s ease-in-out;
 }
   
 nav a:hover::after {
     width: 100%;
+}
+
+nav a:visited {
+    color: #444444;
 }

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FancyTitleComponent } from './fancy-title/fancy-title.component';
-import { MainMenuComponent } from './main-menu.component';
+import { MainPageComponent } from './main-page.component';
 import { FancyTitleModule } from './fancy-title/fancy-title.module';
+import { FancyGridModule } from './fancy-grid/fancy-grid.module';
 
 
 
@@ -11,8 +11,9 @@ import { FancyTitleModule } from './fancy-title/fancy-title.module';
   imports: [
     CommonModule,
     FancyTitleModule,
-    MainMenuComponent
+    FancyGridModule,
+    MainPageComponent
   ],
   exports: []
 })
-export class MainMenuModule { }
+export class MainPageModule { }

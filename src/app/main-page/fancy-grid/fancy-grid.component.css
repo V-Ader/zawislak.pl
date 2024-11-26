@@ -1,0 +1,30 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-container > * {
+    margin: 0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 8vw;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+
+    flex: 1 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background-color: rgb(206, 153, 88);
+
+    transition: flex-grow 0.2s ease-in-out; 
+
+}
+
+.grid-container > *:hover {
+    flex-grow: 4;
+}
+

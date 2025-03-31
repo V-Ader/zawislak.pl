@@ -22,3 +22,5 @@ body {
     border-radius: 20px;
     border: 0px none #ffffff00;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

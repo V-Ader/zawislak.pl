@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/YOUR_PROJECT_NAME/
-          server-dir: /home/xnzawin/www
+          server-dir: /home/xnzawin/www/

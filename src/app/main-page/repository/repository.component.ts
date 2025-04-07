@@ -42,7 +42,7 @@ export class RepositoryComponent {
       .setName('Loyalty cards - Cassandra')
       .setDescription('This project is a loyalty card system built on Apache Cassandra, allowing customers to use cards issued by different providers while tracking their balances.')
       .setUrl('https://github.com/V-Ader/Cassandra_loyality_cards')
-      .setIcon('../../../../assets/repository/RockPaperScissors.png')
+      .setIcon('../../../../assets/repository/Cassandra.png')
       .setTags([RepositoryTags.Java, RepositoryTags.Cassandra, RepositoryTags.Docker])
       .build(),
     new RepositoryBuilder()

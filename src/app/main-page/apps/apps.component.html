@@ -1,0 +1,11 @@
+<div id="panel">
+  <button (click)="showSection('pdf-maker');">PDF</button>
+  <section *ngIf="!hidePdfMakerApp">
+    <header>
+      <p></p>
+      <h1> Image to PDF </h1>
+      <button (click)="closeSection('pdf-maker');">X</button>
+    </header>
+    <app-images-to-pdf></app-images-to-pdf>
+  </section>
+</div>

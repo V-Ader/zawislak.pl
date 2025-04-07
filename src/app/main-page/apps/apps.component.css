@@ -1,0 +1,23 @@
+section {
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  position: absolute;
+
+  background-color: #d3d3d3de;
+  border-radius: 20px;
+
+  header {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    left: 5%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+
+}

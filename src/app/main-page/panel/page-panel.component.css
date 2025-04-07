@@ -1,0 +1,50 @@
+
+#panel {
+    background-color: white;
+}
+
+section {
+    margin: 60px 20% 12px 20%;
+    padding: 24px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgb(224, 224, 224);
+    border-radius: 24px;
+}
+
+#about-me {
+    height: 400px;
+}
+
+#apps {
+    height: fit-content;
+}
+
+
+#contact {
+    height: fit-content;
+    padding: 8px;
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}

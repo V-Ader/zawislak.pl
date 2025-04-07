@@ -1,0 +1,15 @@
+<div class="image-container">
+  <div class="image-preview" *ngFor="let img of images">
+    <img alt="loading image"  [src]="img" />
+  </div>
+</div>
+
+<div
+    class="drop-zone"
+    (dragover)="onDragOver($event)"
+    (drop)="onDrop($event)">
+    <p>Drag and drop your images</p>
+</div>
+
+
+<button (click)="generatePDF()">Pobierz jako PDF</button>

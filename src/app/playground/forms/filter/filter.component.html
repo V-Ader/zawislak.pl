@@ -1,2 +1,2 @@
-<input [(ngModel)]="filterForm().name" (ngModelChange)="onFilterChange()" placeholder="Name"/>
-<input [(ngModel)]="filterForm().age" (ngModelChange)="onFilterChange()" placeholder="Age" type="number"/>
+<input [value]="filterForm().name" (input)="onFilterChange('name', $event)" placeholder="Name" [disabled]="disabled()"/>
+<input [value]="filterForm().age" (input)="onFilterChange('age', $event)" placeholder="Age" type="number" [disabled]="disabled()"/>

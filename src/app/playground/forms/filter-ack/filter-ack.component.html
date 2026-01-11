@@ -1,0 +1,3 @@
+<input [value]="localFilter().name" (input)="onFilterChange('name', $event)" placeholder="Name"/>
+<input [value]="localFilter().age" (input)="onFilterChange('age', $event)" placeholder="Age" type="number"/>
+<button (click)="acknowledgeFilter()">set</button>

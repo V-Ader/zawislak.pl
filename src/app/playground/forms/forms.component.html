@@ -1,4 +1,6 @@
-<p>forms works!</p>
-
-<app-filter [filterForm]="formData" (filterChanged)="updateFilter($event)"></app-filter>
-<app-filter [filterForm]="formData" (filterChanged)="updateFilter($event)"></app-filter>
+<app-filter-ack [filterForm]="formData()" (filterChanged)="updateFilter($event)"></app-filter-ack>
+<br/>
+<app-filter [filterForm]="formData()" (filterChanged)="updateFilter($event)"></app-filter>
+<app-filter [filterForm]="formData()" (filterChanged)="updateFilter($event)" [disabled]="true"></app-filter>
+<br/>
+<app-table [tableData]="tableData()"></app-table>

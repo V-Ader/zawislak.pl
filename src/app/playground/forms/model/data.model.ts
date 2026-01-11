@@ -1,4 +1,4 @@
-export class DataModel {
+export class FilterDataModel {
     constructor(
         public name: string,
         public age: number,

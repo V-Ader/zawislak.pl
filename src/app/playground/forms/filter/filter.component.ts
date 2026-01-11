@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core';
-import { DataModel } from '../model/data.model';
+import { FilterDataModel } from '../model/data.model';
 
 @Component({
   selector: 'app-filter',
@@ -10,11 +10,15 @@ import { DataModel } from '../model/data.model';
 })
 export class FilterComponent {
 
-  filterForm = input<DataModel>(new DataModel('', 0));
+  disabled = input<boolean>(false);
 
-  filterChanged = output<DataModel>();
+  filterForm = input<FilterDataModel>(new FilterDataModel('', 0));
 
-  onFilterChange() {
-    this.filterChanged.emit(this.filterForm());
+  filterChanged = output<FilterDataModel>();
+
+  onFilterChange(field: string, event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    const updated = { ...this.filterForm(), [field]: field === 'age' ? Number(value) : value };
+    this.filterChanged.emit(updated);
   }
 }

@@ -11,11 +11,15 @@ export class RepositoryModel {
         this.url = url;
         this.tags = tags;
     }
+
+	static empty() {
+		return new RepositoryBuilder().build();
+	}
 }
 
 export enum RepositoryTags {
     Go = 'Go',
-    Python = 'Python',   
+    Python = 'Python',
     JavaScript = 'JavaScript',
     Java = 'Java',
     TypeScript = 'TypeScript',

@@ -15,7 +15,7 @@ export class FancyTitleComponent implements OnChanges {
 
   constructor() {
     this.imageIndexes = this.generateRandomSequence(0, 8);
-    this.letterDelays = this.generateRandomDelays(this.label.length, 1000, 2000);
+    this.letterDelays = this.generateRandomDelays(this.label.length, 200, 1000);
   }
 
   ngOnChanges() {
@@ -34,5 +34,5 @@ export class FancyTitleComponent implements OnChanges {
   generateRandomDelays(count: number, min: number, max: number): number[] {
     return Array.from({ length: count }, () => Math.random() * (max - min) + min);
   }
-  
+
 }

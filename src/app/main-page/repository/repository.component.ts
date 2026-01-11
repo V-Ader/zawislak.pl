@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { RepositoryModel, RepositoryTags, RepositoryBuilder } from './model/repository.model';
+import { RepositoryDetailsComponent } from "./repository-detailes/repository-details.component";
 
 @Component({
   selector: 'app-repository',
   standalone: true,
-  imports: [],
+	imports: [
+		RepositoryDetailsComponent
+	],
   templateUrl: './repository.component.html',
   styleUrl: './repository.component.css'
 })
@@ -57,5 +60,9 @@ export class RepositoryComponent {
 
   openRepository(repository: RepositoryModel) {
     this.selectedRepository = repository;
+  }
+
+  closeRepositor(){
+	  this.selectedRepository = null;
   }
 }

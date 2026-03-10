@@ -24,6 +24,10 @@ export enum RepositoryTags {
     Docker = 'Docker',
     K8s = 'K8s',
     RestAPI = 'RestAPI',
+	Keycloak = 'Keycloak',
+    AI = 'AI',
+	MCP = 'MCP',
+	MULTI_TENENT = 'Multi-tenant',
     Microservices = 'Microservices',
     Grpc = 'Grpc',
     ProtocolBuffers = 'Protocol Buffers',
@@ -31,6 +35,8 @@ export enum RepositoryTags {
     PostrgeSQL = 'PostgreSQL',
     Cassandra = 'Cassandra',
     Angular = 'Angular',
+    Notion = 'Notion',
+	N8N = 'N8N',
 }
 
 export class RepositoryBuilder {

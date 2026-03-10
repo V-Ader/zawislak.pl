@@ -37,6 +37,17 @@ span {
     opacity: 0;
 }
 
+/* Predefiniowane klasy dla obrazków - lepsze dla wydajności */
+.bg-image-0 { background-image: url('../../../assets/fancy-title-meterials/small/0.jpg'); }
+.bg-image-1 { background-image: url('../../../assets/fancy-title-meterials/small/1.jpg'); }
+.bg-image-2 { background-image: url('../../../assets/fancy-title-meterials/small/2.jpg'); }
+.bg-image-3 { background-image: url('../../../assets/fancy-title-meterials/small/3.jpg'); }
+.bg-image-4 { background-image: url('../../../assets/fancy-title-meterials/small/4.jpg'); }
+.bg-image-5 { background-image: url('../../../assets/fancy-title-meterials/small/5.jpg'); }
+.bg-image-6 { background-image: url('../../../assets/fancy-title-meterials/small/6.jpg'); }
+.bg-image-7 { background-image: url('../../../assets/fancy-title-meterials/small/7.jpg'); }
+.bg-image-8 { background-image: url('../../../assets/fancy-title-meterials/small/8.jpg'); }
+
 @keyframes fadeIn {
     from {
         opacity: 0;

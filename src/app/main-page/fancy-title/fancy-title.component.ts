@@ -13,13 +13,16 @@ export class FancyTitleComponent implements OnChanges {
   imageIndexes: number[]
   letterDelays: number[];
 
+  readonly RANDOM_DELAY_MIN = 500;
+  readonly RANDOM_DELAY_MAX = 1500;
+
   constructor() {
     this.imageIndexes = this.generateRandomSequence(0, 8);
-    this.letterDelays = this.generateRandomDelays(this.label.length, 1000, 2000);
+    this.letterDelays = this.generateRandomDelays(this.label.length, this.RANDOM_DELAY_MIN, this.RANDOM_DELAY_MAX);
   }
 
   ngOnChanges() {
-    this.letterDelays = this.generateRandomDelays(this.label.length, 1000, 2000);
+    this.letterDelays = this.generateRandomDelays(this.label.length, this.RANDOM_DELAY_MIN, this.RANDOM_DELAY_MAX);
   }
 
   generateRandomSequence(a: number, b: number): number[] {
